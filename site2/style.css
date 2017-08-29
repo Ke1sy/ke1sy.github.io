@@ -1,0 +1,431 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    min-width: 940px;
+	height:100%;
+	font: 14px/18px 'Times New Roman', Times, sans-serif;
+	background-color:#FFF;
+}
+ol, ul {
+	list-style: none;
+}
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+	box-sizing: border-box;
+	moz-box-sizing: border-box;
+	webkit-box-sizing: border-box;
+}
+a, a:hover{
+	text-decoration: none;
+}
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: table;
+	
+}
+.clearfix:after{
+	clear: both;
+}
+.container{
+    width:940px;
+    margin: 0 auto;
+}
+#header{
+    position: absolute;
+    top: 20px;
+    padding: 20px 0;
+    width: 100%;
+   
+}
+.logo{
+    float: left;
+    
+}
+.navi {
+    float: right;
+    
+}
+#home{
+    height: 700px;
+    background: #222 url(img/home-bg.jpg) no-repeat center bottom;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    padding-top: 270px;
+    text-align: center;
+    color: #fff;
+}
+#home h3{
+    font: 40px/40px Arial, sans-serif;
+    margin-bottom: 40px;
+}
+#home h1{
+    font: 75px/75px Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.btn{
+    background: #fed136;
+    padding: 20px 30px;
+    font: bold 24px/24px Arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: white;
+}
+.navi li{
+    margin-right: 40px;
+    float: left;
+    padding-top: 5px;
+}
+.navi li:last-child {
+    margin-right: 0;
+}
+.navi a{
+    font: 14px Arial, sans-serif;
+    color: white;
+}
+.navi a:hover{
+    color:#fed136;
+}
+.btn:hover{
+    background: #daae17;
+    color: #fff;
+}
+#services {
+    text-align: center;
+    height: 570px;
+    background: #fff;
+
+}
+h3.title1{
+  font: bold 40px/40px Arial, sans-serif;
+  color: #222222;
+  margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.descr{
+     font: 16px/16px Times New Roman, Times, serif;
+    color: #777777;
+     margin-bottom: 10px;
+}
+.box{
+    padding: 120px 0;
+}
+h5.title{
+    font: bold 18px/18px Arial, sans-serif;
+  color: #222222;
+  margin-bottom: 10px;
+    
+}
+.services-item p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #777;
+}
+.services-item{
+    float:left;
+    width: 33.33%;
+    padding: 90px 10px 0;
+}
+.commerce{
+    background: url(img/commerce.png) no-repeat center top;
+}
+.responsive{
+    background: url(img/responsive.png) no-repeat center top;
+}
+.security{
+    background: url(img/security.png) no-repeat center top;
+}
+.services-wrap, .portfolio-wrap, .about-wrap,  .team-wrap{
+    padding-top: 70px;
+}
+#portfolio {
+    text-align: center;
+       background: #f7f7f7;
+}
+.portfolio-item{
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    margin-bottom: 50px;
+    background: white;
+}
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+.portfolio-item img{
+    height: 300px;
+    width: 283px;
+}
+.portfolio-item:nth-last-child(1), .portfolio-item:nth-last-child(2), .portfolio-item:nth-last-child(3){
+margin-bottom: 0;
+}
+.p-item-footer{
+    padding: 20px 25px;
+}
+.p-item-footer h5.title
+{
+    margin-bottom: 4px;
+    color: #333333;
+    font: bold 18px Arial, sans-serif;
+}
+.portfolio-item span{
+    font: 14px Times New Roman, Times, serif;
+    color: #737373;
+}
+#about {
+    text-align: center;
+    background: #fff;
+}
+.about-text{
+    width: 35%;
+}
+.about-img{
+   width: 30%;
+   
+}
+.about-img:after {
+    content: '';
+    display: block;
+    height: 94px;
+    width: 3px;
+    margin: 0 auto;
+    background: #F1F1F1;
+}
+
+.about-item p, #team span {
+    font: 16px Times New Roman, Times, serif;
+    color: #777777;
+    line-height: 24px;
+}
+.about-item h5
+{
+    line-height: 24px;
+    color: #222222;
+    font: bold 18px Arial, sans-serif;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.about-img img, .about-link{
+    display: inline-block;
+    width: 177px;
+    height: 177px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+     -o-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+}
+.about-link{
+    background: #fed136;
+    text-transform: uppercase;
+    color: #fff;
+    font: bold 18px/30px Arial, sans-serif;
+    padding-top: 30px;
+    text-shadow: 0 1px rgba(0,0,0,.3);
+    }
+#team {
+    text-align: center;
+       background: #f7f7f7;
+}
+.team-item {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+    
+}
+
+.team-item img{
+    border: 7px solid #fff;
+    border-radius: 50%;
+     -o-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+    margin-bottom: 15px;
+}
+.team-item h5{
+    font-size: 16px;
+}
+.team-item p {
+     font: 14px/14px Arial, sans-serif;
+    color: #777777;
+}
+.social{
+      margin-top: 10px;
+    margin-bottom: 30px;
+}
+.social a{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin: 0 3px;
+}
+.tw{
+    background: url(img/twitter.png) no-repeat  center;
+    
+}
+.tw2{
+    background: url(img/twfoot.png) no-repeat  center;  
+}
+.tw:hover, .tw2:hover{
+    background: url(img/Twitter2.png) no-repeat  center; 
+}
+.fb{
+    background: url(img/facebook.png) no-repeat center;
+}
+.fb2{
+    background: url(img/fbfoot.png) no-repeat center;
+}
+.fb:hover, .fb2:hover{
+    background: url(img/Facebook2.png) no-repeat center;
+   
+}
+.pn{
+    background: url(img/pinterest.png) no-repeat  center;
+}
+.pn2{
+    background: url(img/pnfoot.png) no-repeat  center;
+}
+.pn:hover, .pn2:hover{
+    background: url(img/Pinterest1.png) no-repeat  center;
+}
+.ggl{
+    background: url(img/google.png) no-repeat  center;
+}
+.ggl2{
+    background: url(img/gglfoot.png) no-repeat  center;
+}
+.ggl:hover, .ggl2:hover{
+    background: url(img/Google2.png) no-repeat  center;
+}
+
+#team span{
+    text-align: center;
+}
+#brand{
+    padding: 65px 0;
+    background: white;
+    text-align: center;
+}
+#brand a{
+    display: inline-block;
+    margin-right: 40px;
+}
+#brand a:last-child{
+    margin-right: 0px;
+}
+#brand img{
+    vertical-align: middle;
+}
+#contact{
+    background: #222 url(img/mapbg.png) no-repeat right bottom;
+    text-align: center;
+    
+}
+#contact h3{
+    color: white;
+    
+}
+#message{
+    margin-top: 80px;
+}
+#message .left,#message .right{
+    width: 48%;
+}
+#message input[type="text"],
+#message textarea {
+    font: bold 14px/14px Arial, sans-serif;
+    color: #222;
+    width: 100%;
+    margin-bottom: 30px;
+    background: white;
+    box-shadow: none;
+    padding: 15px 20px;
+     border-radius: 4%;
+     -o-border-radius: 4%;
+     -webkit-border-radius: 4%;
+     -moz-border-radius: 4%;
+    
+}
+#message input[type="text"]{
+    
+    height: 50px;
+    border: 1px solid #ccc;
+}
+#message textarea {
+    border: none;
+    height: 210px;
+    resize: none;
+}
+::-webkit-input-placehoder{
+    font: bold 14px/14px Arial, sans-serif;
+    color: #bbb;
+    text-transform: uppercase;
+}
+::-moz-input-placehoder{
+    font: bold 14px/14px Arial, sans-serif;
+    color: #bbb;
+    text-transform: uppercase;
+}
+::-o-input-placehoder{
+    font: bold 14px/14px Arial, sans-serif;
+    color: #bbb;
+    text-transform: uppercase;
+}
+#copyright{
+    background: white;
+    padding: 25px 0;
+}
+#copyright p{
+    margin-top: 15px;
+    font: 14px/14px Arial, sans-serif;
+    color: #555555;
+   text-align: left;
+    
+}
+#copyright .social{
+      margin-top: 0;
+    margin-left: 365px;
+    margin-bottom: 0;
+}
