@@ -356,6 +356,10 @@ footer{
     #header-photo{
         height: 350px;
     }
+    .navi li {
+        display: block;
+        clear:both;
+    }
     .logotext span{
         font-size: 30px;
         margin: 0 5px;
