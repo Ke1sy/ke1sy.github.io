@@ -1,0 +1,43 @@
+#statistics {
+
+  background: $regular_accent_color_1 url(../img/statistics-bg.jpg) center no-repeat;
+  text-align: center;
+  background-size: cover;
+  @media(min-width: 1025px) {
+    padding-top: 157px;
+    padding-bottom: 107px;
+  }
+  @media(min-width: 768px) and (max-width: 1024px) {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  @media(max-width: 767px){
+    padding: 10% 25% 0;
+  }
+
+  h2{
+    font-size: 90px;
+    margin: 85px 0 62px;
+    @media(max-width: 1024px) {
+      font-size: 48px;
+      margin: 40px 0 40px;
+    }
+  }
+
+  h5{
+    margin: 30px 0px 50px;
+    @media(min-width: 1441px) {
+      margin: 62px 64px 50px;
+    }
+    line-height: 1.6;
+  }
+  .statistics-item:before{
+    display: block;
+    content: "";
+    height: 4px;
+    width:70px;
+    background-color: $regular_accent_color_2;
+    position: relative;
+    margin: 0 auto;
+  }
+}

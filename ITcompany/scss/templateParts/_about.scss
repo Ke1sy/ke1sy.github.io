@@ -1,0 +1,42 @@
+#about {
+  padding-bottom: 132px;
+  padding-top: 128px;
+  @media(max-width: 767px){
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  background: url(../img/bg-about.jpg) center no-repeat;
+  background-size: cover;
+  letter-spacing: 0.01rem;
+  h5{
+    &.upper{
+      text-transform: uppercase;
+    }
+    &.bottom-h5{
+      line-height: 1.9;
+      margin-bottom: 23px;
+    }
+
+    @media(min-width: 767px) and (max-width: 1023px) {
+      padding-right: 20;
+    }
+    @media(min-width: 1024px) {
+      padding-right: 96px;
+    }
+  }
+  h2{
+    margin: 30px 0 25px;
+    @media(min-width: 1440px) {
+      margin-bottom: 66px;
+    }
+  }
+  p {
+    padding-right: 20px;
+    margin-bottom: 17px;
+    line-height: 29px;
+  }
+  button{
+    margin-top: 35px;
+  }
+}

@@ -1,0 +1,120 @@
+header {
+  #top-panel {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    background: $regular_accent_color_6;
+    @media (max-width: 768px){
+      text-align: center;
+    }
+    span {
+      color: $invert_accent_color_3;
+      display: inline-block;
+      margin-right: 8px;
+
+      &:before {
+        font-family: 'FontAwesome';
+        font-size: 14px;
+        padding: 0 5px;
+        color: $invert_accent_color_1;
+      }
+      &.phone {
+        &:before {
+          content: "\f095";
+        }
+      }
+      &.hours {
+        &:before {
+          content: "\f017";
+        }
+      }
+    }
+
+    .socials {
+      text-align: right;
+      @media (max-width: 768px){
+        text-align: center;
+      }
+      a {
+        display: inline-block;
+        i {
+          margin-left: 25px;
+          font-size: 15px;
+          color: $invert_accent_color_3;
+          &:hover {
+            color: $invert_accent_color_1;
+          }
+        }
+      }
+    }
+    .container{
+      padding-right: 7px;
+      padding-left: 0;
+    }
+  }
+
+  #navigation {
+    padding-bottom: 8px;
+    #logo{
+      padding: 11px 0 0 0;
+      @media(max-width: 767px){
+        padding-left: 10px;
+      }
+    }
+    .navi{
+      @media(max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+      }
+    }
+
+    .navi li {
+      @media(min-width: 768px) {
+        display: inline-block;
+        float: right;
+      }
+      @media(max-width: 767px){
+        justify-content: flex-end;
+        display: flex;
+        padding-right: 20px;
+        float: none;
+      }
+      @media(min-width: 1440px){
+        margin-left: 35px;
+    }
+      margin-left: 15px;
+
+      a{
+        color: $regular_accent_color_1;
+        text-transform: uppercase;
+        &:hover{
+          color: $regular_accent_color_2;
+        }
+      }
+    }
+    .navbar{
+      padding-top: 27px;
+      padding-right: 0;
+      #main-menu{
+        padding-right: 0;
+      }
+      .navbar-toggle{
+        bottom: 7px;
+        margin-top: 0;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        padding: 9px 10px;
+      }
+    }
+
+
+    .navbar-header button {
+      background: $regular_accent_color_3;
+    }
+    .navbar-header span {
+      background-color: white;
+      border: none;
+    }
+
+  }
+}

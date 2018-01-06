@@ -1,0 +1,134 @@
+#projects {
+
+  background-color: $invert_accent_color_2;
+  padding-top: 97px;
+  padding-bottom: 94px;
+  @media(max-device-width: 768px) and (min-device-width: 426px){
+    padding-left:125px;
+    padding-right:125px;
+  }
+  @media(max-device-width: 767px){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  img{
+    margin-bottom: 22px;
+    display: block;
+    width:100%;
+  }
+  .project-info {
+    position: absolute;
+    top: 129px;
+    text-align: center;
+    z-index: 3;
+    opacity: 0;
+    @media(min-device-width: 1921px){
+      top: 40%;
+      padding: 0 50px;
+    }
+
+    @media(max-device-width: 1440px){
+      padding: 0 10%;
+    }
+    @media(max-device-width: 1280px){
+      top: 15%;
+    }
+    @media(max-device-width: 768px) and (min-device-width: 375px){
+      top: 30%;
+    }
+    h4{
+      @media(max-device-width: 1280px){
+        font-size: 18px;
+      }
+      a:hover{
+        color: $regular_accent_color_1;
+      }
+    }
+    &.large-item {
+      left:16%;
+      @media(min-device-width: 1921px){
+        left: 25%;
+      }
+      @media(max-device-width: 1440px){
+        left: 0;
+      }
+      @media(max-device-width: 767px){
+        top: 15%;
+      }
+    }
+    p {
+      margin-top: 23px;
+      line-height: 2;
+      @media(max-device-width: 1024px){
+        margin-top: 0;
+      }
+    }
+  }
+  .projk {
+    z-index: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      top: 100%;
+      bottom: 20px;
+      display: inline-block;
+      z-index: 1;
+      transition: 0.3s ;
+      transition-delay: .25s;
+      background-color: #3380d8;
+      opacity: 0.8;
+      @media(max-device-width: 767px){
+       bottom: 0;
+      }
+    }
+    &:hover{
+      &:before{
+        top: 0;
+        transition: 0.3s;
+        transition-delay: 0s;
+      }
+      .project-info{
+        transition: 0.6s;
+        opacity: 1;
+      }
+    }
+  }
+
+
+  h5 {
+    letter-spacing: 2px;
+  }
+
+  h2{
+    margin: 30px 0 80px;
+    @media(max-device-width: 767px){
+      margin: 20px 0 30px;
+    }
+  }
+
+  .more-news {
+    max-width: 230px;
+    position: relative;
+    &:hover{
+      color: $regular_accent_color_2;
+    }
+    h5{
+      text-transform: uppercase;
+      margin-top: 25px;
+      line-height: 2.2;
+      letter-spacing: 2px;
+    }
+
+    &:before {
+      display: block;
+      font-family: 'FontAwesome';
+      content: "\f178";
+      position: absolute;
+      top: 8px;
+      font-size: 18px;
+      left: 235px;
+    }
+  }
+}

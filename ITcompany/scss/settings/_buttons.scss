@@ -1,0 +1,14 @@
+button, input[type="submit"] {
+  background-color: $regular_accent_color_2;
+  text-transform: uppercase;
+  border-style: none;
+  padding: 13px 40px;
+  color: $invert_accent_color_1;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  &:hover{
+    transform: scale(1.03);
+    background-color: $regular_accent_color_5;
+  }
+}

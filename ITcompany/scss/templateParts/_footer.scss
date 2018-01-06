@@ -1,0 +1,35 @@
+footer {
+  text-align: center;
+  padding: 30px 0 20px;
+  background-color: $regular_accent_color_6;
+
+  .socials {
+    margin-bottom: 9px;
+    a {
+      display: inline-block;
+      i{
+        padding: 0 13px;
+        font-size: 15px;
+        color: $invert_accent_color_3;
+        &:hover {
+          color: $invert_accent_color_1;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    a{
+      color: $regular_accent_color_2;
+      padding-left: 12px;
+      margin-left: 8px;
+      line-height: 1.1;
+      display: inline-block;
+      border-left: 1px solid white;
+      &:hover{
+        color: $invert_accent_color_1;
+      }
+    }
+  }
+
+}

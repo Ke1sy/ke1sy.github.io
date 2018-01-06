@@ -1,0 +1,97 @@
+#testimonials {
+
+  background: url("../img/testi-bg.jpg") center no-repeat;
+  padding-top: 129px;
+  padding-bottom: 79px;
+  background-size: cover;
+  @media(max-width: 767px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  h2{
+    margin: 30px 0 50px;
+  }
+
+  .testimonial {
+    .pic{
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      @media(max-width: 375px) {
+        display: block;
+        left: 37%;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      img{
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+      }
+    }
+    .testimonial-profile{
+      display: inline-block;
+      position: relative;
+      bottom:23px;
+      margin-left: 25px;
+      @media(max-width: 375px) {
+        display: block;
+        bottom:0;
+        text-align: center;
+      }
+    }
+    .testi-name{
+      display: block;
+    }
+    .post{
+      display: block;
+      font-size: 16px;
+    }
+    .description{
+      color: $invert_accent_color_1;
+      line-height: 30px;
+      margin: 20px 0 40px;
+      position: relative;
+    }
+  }
+
+  .owl-theme .owl-controls{
+    margin-top: 10px;
+    margin-left: 30px;
+    .owl-buttons{
+      text-align: right;
+      position: relative;
+      bottom: 90px;
+      left: 17px;
+      @media(max-width: 375px) {
+        display: block;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+      }
+      div{
+        opacity:1;
+        background: none;
+      }
+    }
+  }
+
+  .owl-prev:before,
+  .owl-next:before {
+    content: "\f053";
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    color: $invert_accent_color_1;
+  }
+
+  .owl-next:before{
+    content: "\f054";
+  }
+
+  .owl-prev:hover:before,
+  .owl-next:hover:before {
+    color: $regular_accent_color_2;
+  }
+}

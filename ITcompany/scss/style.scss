@@ -1,0 +1,41 @@
+﻿//import of color scheme
+@import "settings/media";
+
+//import of fonts
+@import "settings/fonts";
+
+//import of color scheme
+@import "settings/colors";
+
+//buttons styles
+@import "settings/buttons";
+
+//header styles
+@import "templateParts/header";
+
+//first block styles
+@import "templateParts/ourCompany";
+
+//"about" block styles
+@import "templateParts/about";
+
+//"services" block styles
+@import "templateParts/services";
+
+//"statistics" block styles
+@import "templateParts/statistics";
+
+//"projects" styles
+@import "templateParts/projects";
+
+//"testimonials" styles
+@import "templateParts/testimonials";
+
+//"blog" styles
+@import "templateParts/blog";
+
+//"contact-form" styles
+@import "templateParts/contact-form";
+
+//footer styles
+@import "templateParts/footer";

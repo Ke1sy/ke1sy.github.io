@@ -1,0 +1,37 @@
+#blog,
+#contact-form,
+#projects,
+#services,
+#statistics,
+#testimonials,
+#about,
+footer {
+    @media(max-width: 899px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media(min-width: 900px) and (max-width: 1599px) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    @media(min-width: 1600px){
+        padding-left: 375px;
+        padding-right: 375px;
+        }
+
+}
+h1,h2,h3 {
+    @media(max-width: 599px) {
+        font-size: 26px !important;
+    }
+}
+#statistics {
+    h2{
+        @media(max-width: 599px) {
+            font-size: 48px !important;
+        }
+    }
+}
+
