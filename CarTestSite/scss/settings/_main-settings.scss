@@ -1,0 +1,17 @@
+.body-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  max-width: 1378px;
+  margin: 0 auto;
+}
+
+button{
+  border: none;
+  background: $orange;
+  color: $invert;
+  cursor: pointer;
+}
