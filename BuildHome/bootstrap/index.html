@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <!-- Контейнер -->
+        <div class="container">
+            <!-- Заголовок -->
+            <div class="navbar-header">
+                <!-- Кнопка «Гамбургер» -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                    <span class=sr-only>Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Бренд или название сайта -->
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <!-- Основная часть меню -->
+            <div class="collapse navbar-collapse" id="navbar-main">
+
+                <!-- Содержимое основной части -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Ссылка 1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Ссылка 2</a></li>
+                    <li><a href="#">Ссылка 3</a></li>
+                    <li><a href="#">Ссылка 4</a></li>
+                    <li><a href="#">Ссылка 5</a></li>
+                    <!-- Выпадающий список -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Раздел <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a >Dropdown-Sub<span class="caret"></span></a></li>
+                            <li><a href="#">Ссылка</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Ссылка</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
