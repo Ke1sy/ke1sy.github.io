@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/css_reset.css" >
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Build Home</title>
+</head>
+<body>
+<header>
+
+    <div class="container">
+        <div class="site-info">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-img">
+                        <img src="img/logo-img.png">
+                    </div>
+                    <div class="logo-text">
+                        <h2>Build Home</h2>
+                        <span class="upper">Industrial Theme</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="socials header-socials">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-wifi"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+    <nav>
+        <div class="container nav-container">
+
+            <ul id="menu">
+                <li class="menu-item active"><a href="index.html" class="menu-item-link"><h6 class="upper invert">Home</h6></a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link"><h6 class="upper invert">Features</h6></a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link"><h6 class="upper invert">Services</h6></a>
+                    <ul class="submenu news-submenu with-shadow">
+                        <li class="submenu-item"><a href="#" class="submenu-item-link"><span>Service 1</span></a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item-link"><span>Service 2</span></a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item-link"><span>Service 3</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-item" id="news"><a href="#" class="menu-item-link">
+                    <h6 class="upper invert">News</h6></a>
+                    <ul class="submenu news-submenu with-shadow">
+                        <li class="submenu-item"><a href="#" class="submenu-item-link"><span>News Standard</span></a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item-link"><span>News Masonry</span></a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item-link"><span>News Post</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#" class="menu-item-link"><h6 class="upper invert">Shop</h6></a></li>
+                <li class="menu-item empty page2"></li>
+
+                <li class="menu-item header-search">
+                    <form name="header-search">
+                        <button class="header-search-button"><i class="fa fa-search invert" aria-hidden="true"></i></button>
+                        <input type="text" id="header-search-input" placeholder="Search...">
+                        <button class="header-search-button" id="search-reset" onclick="resetValue();"><i class="fa fa-close invert" aria-hidden="true"></i></button>
+                    </form>
+                </li>
+            </ul>
+
+            <div class="shadow"></div>
+        </div>
+    </nav>
+
+</header>
+
+<div class="container-fluid" id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 breadcrumbs-heading">
+                <h3> About US </h3>
+            </div>
+            <div class=" col-md-6 breadcrumbs-chain">
+                <a class="breadcrumbs-chain-link" href="index.html">Home</a> /<a class="breadcrumbs-chain-link" href="index.html"> Features </a>/ <a class="breadcrumbs-chain-link" href="index.html"> Layouts </a>/ About us
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="about">
+    <div class="container" id="about-content">
+            <main>
+
+
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/profile.jpg">
+                    </div>
+                    <div class="profile-info">
+                        <h4>Company Profile</h4>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium ectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ui sequitur mutationem suetudium lectorum.
+                            </p>
+                    </div>
+                </div>
+
+
+                <div class="skills">
+                    <h4>Our Skills</h4>
+                    <div class="skills-items-container">
+                        <div class="skills-item">
+                            <div class="counter-wrapper">
+                                <div class="counter">
+                                    <h3 class="counter-number"><mark class="spincrement">67</mark>%</h3>
+                                </div>
+                            </div>
+                            <h6>Engineering</h6>
+                        </div>
+
+                    <div class="skills-item second-skill">
+                            <div class="counter-wrapper">
+                                <div class="counter">
+                                    <h3 class="counter-number"><mark class="spincrement">84</mark>%</h3>
+                                </div>
+                            </div>
+                            <h6>Industry</h6>
+                    </div>
+
+                        <div class="skills-item third-skill">
+                            <div class="counter-wrapper">
+                                <div class="counter">
+                                    <h3 class="counter-number"><mark class="spincrement">72</mark>%</h3>
+                                </div>
+                            </div>
+                            <h6>Constructing</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-and-toggles">
+                    <div class="accordion-wrapper">
+                        <h4>Accordion</h4>
+
+                        <div id="accordion">
+                            <div class="acc-head active">
+                                <div class="acc-head-status"></div>
+                                <div class="acc-head-text"><h6 class="upper">Accordion Panel 1</h6></div>
+                            </div>
+                            <div class="acc-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+                            <div class="acc-head">
+                                <div class="acc-head-status"></div>
+                                <div class="acc-head-text"><h6 class="upper">Accordion Panel 2</h6></div>
+                            </div>
+                            <div class="acc-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+                            <div class="acc-head">
+                                <div class="acc-head-status"></div>
+                                <div class="acc-head-text"><h6 class="upper">Accordion Panel 3</h6></div>
+                            </div>
+                            <div class="acc-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+                            <div class="acc-head">
+                                <div class="acc-head-status"></div>
+                                <div class="acc-head-text"><h6 class="upper">Accordion Panel 4</h6></div>
+                            </div>
+                            <div class="acc-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="toggles-wrapper">
+                        <h4>Toggles</h4>
+                        <div id="toggle">
+
+                            <div class="toggle-head active">
+                                <div class="toggle-head-status"></div>
+                                <div class="toggle-head-text"><h6 class="upper">Toggle Panel 1</h6></div>
+                            </div>
+                            <div class="toggle-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+                            <div class="toggle-head">
+                                <div class="toggle-head-status"></div>
+                                <div class="toggle-head-text"><h6 class="upper">Toggle Panel 2</h6></div>
+                            </div>
+
+                            <div class="toggle-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+                            <div class="toggle-head">
+                                <div class="toggle-head-status"></div>
+                                <div class="toggle-head-text"><h6 class="upper">Toggle Panel 3</h6></div>
+                            </div>
+                            <div class="toggle-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+                            <div class="toggle-head">
+                                <div class="toggle-head-status"></div>
+                                <div class="toggle-head-text"><h6 class="upper">Toggle Panel 4</h6></div>
+                            </div>
+                            <div class="toggle-body">
+                                <p>Cum sociis natoque penatibus et magnis dis
+                                    parturient mus. Pro vel nibh et elit mollis
+                                    commodo et nec augueique Nemo enim ipsam voluptatem
+                                    quia ptas sit aspernatur samomo.
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <h4 class="tabs-heading">Tabs</h4>
+
+                    <div class="first-tabs-wrapper">
+                        <div id="tabs">
+                            <ul>
+                                <li><a href="#tabs-1"><h6 class="upper">Tab Title 1</h6></a></li>
+                                <li><a href="#tabs-2"><h6 class="upper">Tab Title 2</h6></a></li>
+                                <li><a href="#tabs-3"><h6 class="upper">Tab Title 3</h6></a></li>
+
+                            </ul>
+                            <div id="tabs-1">
+                                <h4 class="tab-title"><img src="img/feature-icon2.png">Flexible & Smart</h4>
+                                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum </p>
+                            </div>
+                            <div id="tabs-2">
+                                <h4 class="tab-title"><img src="img/feature-icon1.png">Smart & Flexible</h4>
+                                <p>Mirum est notare quam littera gothica, quam nunc putamus parum. Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ui sequitur mutationem suetudium lectorum.  </p>
+                            </div>
+                            <div id="tabs-3">
+                                <h4 class="tab-title"><img src="img/feature-icon2.png">Flexible & Smart</h4>
+                                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis ui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum </p>
+                            </div>
+
+                            </div>
+                        </div>
+
+                    <div class="second-tabs-wrapper">
+                        <h4 class="tabs-heading">Site Tour</h4>
+                        <div id="tabs2">
+                            <ul>
+                                <li><a href="#tabs-4"><h6 class="upper">Accordion Panel 1</h6></a></li>
+                                <li><a href="#tabs-5"><h6 class="upper">Accordion Panel 2</h6></a></li>
+                                <li><a href="#tabs-6"><h6 class="upper">Accordion Panel 3</h6></a></li>
+                                <li><a href="#tabs-7"><h6 class="upper">Accordion Panel 4</h6></a></li>
+
+                            </ul>
+                            <div id="tabs-4">
+                                <h4 class="tab-title"><img src="img/feature-icon2.png">Flexible & Smart</h4>
+                                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+                            </div>
+                            <div id="tabs-5">
+                                <h4 class="tab-title"><img src="img/feature-icon1.png">Smart & Flexible</h4>
+                                <p>Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo.Cum sociis natoque penatibus et magnis dis mus. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+                            </div>
+                            <div id="tabs-6">
+                                <h4 class="tab-title"><img src="img/feature-icon2.png">Flexible & Smart</h4>
+                                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. </p>
+                            </div>
+                            <div id="tabs-7">
+                                <h4 class="tab-title"><img src="img/feature-icon1.png">Smart & Flexible</h4>
+                                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo. Claritas est etiam processus dynamicus, qui sequitur mutationem suetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+
+            </main>
+
+
+
+            <aside>
+
+                <div class="sidebar-search">
+                    <form class="sidebar-search-form" name="sidebar-search-form">
+                        <input type="text" id="sidebar-search-input" name="sidebar-search-input" placeholder="Search...">
+                        <button class="sidebar-search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+
+                <div class="sidebar-links">
+                    <h5 class="sidebar-title">List</h5>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">How to Write a Blog</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Create a Blog in 4 Steps</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">15 Tips to Increase Traffic</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">20 Blog Post Ideas</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Top 10 for Beginner Bloggers</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Labore et dolore magna </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-posts">
+                    <h5 class="sidebar-title">Popular Posts</h5>
+                    <div class="sidebar-posts-item">
+                        <p>Cum sociis natoque penatibus et agnis dis parturient mus. Pro vel nibh et elit llis commodo et nec augueique emo im ipsam voluptatem quia ptas sit pernatur samomo.</p>
+                    </div>
+                    <div class="sidebar-post-date">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="#">3 days ago</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-projects">
+                    <div class="sidebar-projects-header">
+                        <h5 class="sidebar-title">Latest Projects</h5>
+                        <div class="project-buttons">
+                            <button class="prev project-buttons-item"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button class="next project-buttons-item"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-projects-item">
+                        <img src="img/aside-project.jpg">
+                        <h6 class="sidebar-project-title upper">Advanced Machinery</h6>
+                        <p class="sidebar-project-category"><a href="#">Factory</a> / <a href="#">Work</a></p>
+                        <p>Cum sociis natoque penatibus et agnis dis urient mus. Pro vel nibh et elit llis commodo et nec</p>
+                    </div>
+
+                </div>
+
+            </aside>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 footer-logo">
+                <a href="#" class="footer-logo-link">
+                    <div class="footer-logo-img">
+                        <img src="img/logo-invert.png">
+                    </div>
+                    <div class="footer-logo-text">
+                        <h2 class="invert">Build Home</h2>
+                        <span class="upper invert">Industrial Theme</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 socials footer-socials">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-wifi"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-sm-4 footer-search">
+                <form name="search">
+                    <input type="text" id="footer-search-input" placeholder="Search...">
+                    <button class="search-button"><i class="fa fa-search invert" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 footer-links">
+                <h5 class="invert upper">Socials</h5>
+                <ul class="links-list first-list">
+                    <li><p><a href="#" class="links-list-item" >Facebook</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Flickr</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Twitter</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Vimeo</a></p></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-3 footer-links second">
+                <h5 class="invert upper">Links</h5>
+                <ul class="links-list">
+                    <li><p><a href="#" class="links-list-item">How to Write a Blog
+
+
+
+
+                    </a></p></li>
+                    <li><p><a href="#" class="links-list-item" > Create a Blog in 4 Steps</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >  15 Tips to Increase Traffic</a></p></li>
+                    <li><p><a href="#" class="links-list-item"> 20 Blog Post Ideas</a></p></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-3 footer-links third">
+                <h5 class="invert upper">BLOGROLL</h5>
+                <ul class="links-list">
+                    <li><p><a href="#" class="links-list-item" >Blogs Blog</a></p></li>
+                    <li><p><a href="#" class="links-list-item" > Roll Up Roll Up</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Blog Free</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Wordpress Blog</a></p></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-3 footer-links fourth">
+                <h5 class="invert upper">About us</h5>
+                <ul class="links-list">
+                    <li><p><a href="#" class="links-list-item" >Agriculture</a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Harvest </a></p></li>
+                    <li><p><a href="#" class="links-list-item" > Company news </a></p></li>
+                    <li><p><a href="#" class="links-list-item" >Investor relations </a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+        <div class="container footer-bottom-info">
+            <div class="col-sm-12 col-md-8 bottom-contacts">
+                <div class="location">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>BuildHomeLtd.  Street Name 123   23 45 Cityname</p>
+                </div>
+                <div class="phone">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p>+123 900 123 456</p>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>info@buildhome.web</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 copyright">
+                <p>© 2014 Build Home</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.spincrement.js"></script>
+<script src="js/build-home.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

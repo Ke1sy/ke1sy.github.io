@@ -1,0 +1,93 @@
+#features {
+  display: flex;
+  padding-top: 40px;
+  @include media-breakpoint-down(md) {
+    padding: 40px 20px 0;
+  }
+  @include media-breakpoint-down(xs) {
+   flex-direction: column;
+  }
+  .features-item {
+    display: flex;
+    padding-bottom: 53px;
+    width: 33.33%;
+    @include media-breakpoint-down(xs) {
+      padding-bottom: 25px;
+      width: 70%;
+      margin: 0 15%;
+    }
+    @media screen and (max-width: 500px) {
+      width: 90%;
+      margin: 0 5%;
+    }
+    .features-number{
+      padding-top: 20px;
+      @include media-breakpoint-down(sm) {
+        padding-top: 8px;
+        padding-right: 10px;
+      }
+    }
+    .features-content{
+      padding-left: 30px;
+      @include media-breakpoint-down(sm) {
+        padding-left: 10px;
+      }
+
+      &-text{
+        padding-right: 10px;
+        h4{
+          color: #2a2b2e;
+          @include media-breakpoint-down(sm) {
+            font-size: 18px;
+          }
+        }
+        p{
+          margin: 10px 0 11px;
+          height: 60px;
+          overflow: hidden;
+        }
+      }
+      .feature-read-more {
+        h6{
+          display: inline-block;
+          font-size: $body-font-size;
+          color: #2a2b2e;
+        }
+        i{
+          font-size: 10px;
+          margin-left: 5px;
+          color: $regular-accent-color-1;
+        }
+        &:hover {
+          i{
+            color: #989fb3;
+          }
+          h6 {
+            color: $regular-accent-color-1;
+          }
+        }
+      }
+
+    }
+    &:nth-child(2){
+      padding-left: 10px;
+      @include media-breakpoint-down(sm) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3) {
+      padding-left: 25px;
+      @include media-breakpoint-down(sm) {
+        padding-left: 0;
+      }
+      .features-content {
+        &-text {
+
+          p {
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+  }
+}

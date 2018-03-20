@@ -1,0 +1,205 @@
+#news-banners {
+  background: #f7f7f7;
+  padding: 42px 0 54px 0;
+  @include media-breakpoint-down(md) {
+    padding: 5% 15% 5% 5%;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 40px 20px;
+  }
+  .h3-heading{
+    margin-bottom: 46px;
+
+  }
+}
+.news-section {
+  @include media-breakpoint-down(md) {
+    padding-left: 40px;
+  }
+
+  &-item {
+    display: flex;
+    margin-bottom: 20px;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .article-img{
+      position: relative;
+      .post-date{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        top: 8%;
+        left: -11%;
+        .month{
+          background: $regular-accent-color-1;
+          padding: 8px 5px;
+        }
+        .day{
+          padding: 8px 5px;
+          background: $regular-accent-color-2;
+        }
+      }
+    }
+    .article-content {
+      padding-left: 34px;
+      h5:hover {
+        color: $regular-accent-color-1;
+      }
+      .article-info {
+        display: flex;
+        margin: 3px 0 21px;
+        letter-spacing: 0.4px;
+        a{
+          color: #9e9e9e;
+          span {
+            color: $regular-accent-color-1;
+            font-weight: 500;
+          }
+          &:hover{
+            color: $regular-accent-color-1;
+          }
+        }
+        .comments {
+          margin-left: 11px;
+        }
+      }
+    }
+  }
+}
+.banner-section{
+
+  padding-left: 20px;
+  @include media-breakpoint-down(md) {
+    padding-right: 20px;
+  }
+  &-item {
+    height: 165px;
+    display: flex;
+    position: relative;
+    @media screen and (max-width: 620px) {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      width: 80%;
+      margin: 0 10%;
+      padding: 20px 0;
+    }
+    .banner-img{
+      width: 30%;
+      @media screen and (max-width: 620px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .banner-content {
+      width: 70%;
+      display: flex;
+      padding: 25px;
+
+      @include media-breakpoint-down(md) {
+       padding: 4% 6% 0;
+      }
+      @media screen and (max-width: 620px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+      .banner-number{
+        font-size: 36px;
+        width: 13%;
+        @media screen and (max-width: 620px) {
+          width: 20%;
+        }
+
+      }
+      .banner-text{
+        width: 87%;
+        @media screen and (max-width: 620px) {
+          margin-bottom: 20px;
+        }
+        h2,
+        h3{
+          letter-spacing: 1px;
+          @media screen and (max-width: 620px) {
+            font-size: 20px;
+            line-height: 1;
+            margin-top:5px;
+          }
+        }
+        h3{
+          margin: 10px 0 16px;
+
+        }
+      }
+    }
+
+    &.first-banner {
+      background: $regular-accent-color-1;
+
+      .banner-number{
+        h2{
+          color: $regular-accent-color-2;
+        }
+      }
+      .banner-content {
+        p{
+          color: #2a2b2e;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          left: 148px;
+          top: 28px;
+          border: 8px solid transparent;
+          border-right: 9px solid $regular-accent-color-1;
+          @media screen and (max-width: 620px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.second-banner {
+      background: $regular-accent-color-2;
+      .banner-number{
+        padding: 4px 0 0 1px;
+        h2{
+          color: $regular-accent-color-1;
+        }
+        p{
+          color: $invert-accent-color-1;
+        }
+
+      }
+      .banner-img {
+        text-align: right;
+        @media screen and (max-width: 620px) {
+          text-align: center;
+        }
+      }
+      .banner-content {
+        .banner-text{
+          padding: 3px 0 0 11px;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          right: 148px;
+          top: 30px;
+          border: 8px solid transparent;
+          border-left: 9px solid $regular-accent-color-2;
+          @media screen and (max-width: 620px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+}

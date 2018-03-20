@@ -1,0 +1,101 @@
+#brands{
+  padding: 43px 0 56px;
+  @include media-breakpoint-down(md){
+   padding: 40px 20px;
+  }
+  .brands-header{
+    padding: 0 15px;
+  }
+  .brands-heading{
+    margin-bottom: 60px;
+  }
+  .brand-buttons {
+    text-align: right;
+    &-item{
+      background: transparent;
+      padding: 0 10px;
+      border: 1px solid #e3e3e3;
+      position: relative;
+      top: -1px;
+      &.prev{
+        right: -4px;
+      }
+      i{
+        color: #777777;
+      }
+      &:hover{
+        i{
+          color: $regular-accent-color-1;
+        }
+      }
+    }
+  }
+  .brands-img{
+    &.third-brand,
+    &.fourth-brand,
+    &.fifth-brand,
+    &.sixth-brand
+    {
+      text-align: right;
+    }
+   &.sixth-brand
+    {
+     img{
+       padding-right: 9px;
+     }
+    }
+  }
+}
+
+
+.carousel {
+  position: relative;
+  width: 1160px;
+  @include media-breakpoint-down(md){
+    width: 93%;
+  }
+  background: transparent;
+}
+
+.carousel img {
+  width: 143px;
+  height: auto;
+  display: block;
+}
+
+
+.gallery {
+  width: 1160px;
+  overflow: hidden;
+  @include media-breakpoint-down(md){
+    width: 1000px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 800px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 200px;
+  }
+}
+
+.gallery ul {
+  height: 70px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+  margin: 0 28px;
+}

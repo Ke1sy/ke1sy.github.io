@@ -1,0 +1,216 @@
+footer {
+  background-color: #2a2d32;
+  .row{
+    padding: 0 15px;
+  }
+  .footer-logo {
+    display: flex;
+    padding: 14px 13px 7px;
+    background-color: $regular-accent-color-1;
+    @include media-breakpoint-down(sm){
+     justify-content: center;
+    }
+    &-link {
+      display: flex;
+    }
+    &-img {
+      padding-left: 4px;
+    }
+    &-text {
+      padding-left: 12px;
+      h2 {
+        font-size: 27px;
+        line-height: 0.67;
+        letter-spacing: 0.3px;
+
+      }
+      span {
+        opacity: 0.5;
+        font-size: 11px;
+        letter-spacing: 3.3px;
+      }
+    }
+  }
+  .footer-socials{
+    background-color: #3d4044;
+    padding: 24px 25px 17px 13px;
+    display: flex;
+    justify-content: space-around;
+    a{
+      display: inline-block;
+      margin: 0 3px 0 14px;
+      i{
+        font-size: 18px;
+        color: #ffffff;
+        opacity:0.2;
+        &.fa-wifi {
+          transform: rotate(45deg);
+          position: relative;
+          top: 3px;
+        }
+        &:hover{
+          opacity:1;
+        }
+      }
+      &.tw{
+        margin: 0 0 0 17px;
+      }
+    }
+  }
+  .footer-search{
+    padding: 14px 20px 15px;
+    background-color: #37393e;
+    form{
+      position: relative;
+      #footer-search-input{
+        width: 100%;
+        padding: 6px;
+        background: #3f4146;
+        border: none;
+        color: $invert-accent-color-1;
+      }
+      .search-button{
+        background: transparent;
+        border: none;
+        position: absolute;
+        top:20%;
+        right:5%;
+        i{
+          font-size: 16px;
+          opacity: 0.15;
+          &:hover{
+            opacity:1;
+          }
+        }
+      }
+    }
+
+  }
+  .footer-links{
+    padding: 0;
+    margin-bottom: 73px;
+    @include media-breakpoint-down(md){
+      padding: 10px 40px !important;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    @include media-breakpoint-down(xs){
+      margin: 0 15% 2%;
+    }
+    .links-list{
+
+      li{
+        padding: 7px 0;
+        border-bottom: 1px solid #393c40;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      &-item{
+        color: $invert-accent-color-1;
+        opacity: 0.3;
+        display: block;
+        &:hover{
+          color: $regular-accent-color-1;
+          opacity: 1;
+        }
+      }
+      &.first-list{
+        width: 89%;
+        @include media-breakpoint-down(md){
+          width: 100%;
+        }
+      }
+
+    }
+    h5{
+      margin: 40px 0 34px;
+      @include media-breakpoint-down(md){
+        margin: 10px;
+      }
+    }
+
+    &.second {
+      padding-left: 12px;
+    }
+    &.third{
+      padding-left: 21px;
+    }
+    &.fourth{
+      padding-left: 32px;
+    }
+
+  }
+  .footer-bottom{
+    background: #35383c;
+    padding: 20px 0;
+    &-info{
+      @include media-breakpoint-down(md){
+        padding: 0 0 0 2%;
+      }
+      @include media-breakpoint-down(sm){
+        display: flex;
+        flex-direction: column;
+      }
+      .bottom-contacts{
+        display: flex;
+        padding: 0;
+        @include media-breakpoint-down(sm){
+          justify-content: center;
+        }
+        @include media-breakpoint-down(xs){
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      display: flex;
+        p,i{
+          color: $invert-accent-color-1;
+          opacity:0.2;
+          font-size: 12px;
+          letter-spacing: 0.3px;
+        }
+        i{
+          font-size: 16px;
+        }
+      .location,
+      .phone,
+      .email {
+        display: flex;
+        i{
+          margin-right: 10px;
+          margin-left: 4px;
+        }
+      }
+
+      .phone{
+        margin-left: 28px;
+        @include media-breakpoint-down(xs){
+          margin-left: 0;
+          margin-top: 5px;
+        }
+        i{
+          font-size: 20px;
+        }
+      }
+      .email{
+        margin-left: 35px;
+        @include media-breakpoint-down(xs){
+          margin-left: 0;
+          margin-top: 5px;
+        }
+      }
+      .copyright{
+        padding: 0;
+        text-align: right;
+        @include media-breakpoint-down(md){
+          padding: 0 2%;
+        }
+        @include media-breakpoint-down(sm){
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

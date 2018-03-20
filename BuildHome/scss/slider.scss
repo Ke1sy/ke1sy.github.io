@@ -1,0 +1,108 @@
+#slider-container {
+  height: 500px;
+  padding: 0;
+  @include media-breakpoint-down(md){
+    padding: 0 20px;
+    height: 100%;
+    h1{
+      font-size: 36px;
+    }
+  }
+  @include media-breakpoint-down(sm){
+    padding: 0 20px;
+    h1{
+      font-size: 20px;
+    }
+  }
+
+  .container{
+    position: relative;
+  }
+}
+.slider-back{
+  height:100%;
+  @include media-breakpoint-down(md){
+  height:auto;
+  }
+  background: url("../img/-home-slider-back.jpg") no-repeat ;
+  background-position: right 0px bottom 80px;
+}
+.slider-banner{
+  position: absolute;
+  top: 48%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-down(md){
+    top: 25%;
+  }
+  @include media-breakpoint-down(sm){
+    top: 10%;
+  }
+  @media screen and (max-width: 630px) {
+    display:none;
+  }
+  .first-part{
+    width: 70%;
+    z-index: 10000;
+    padding: 19px 36px 0 27px;
+    background: rgba(48,48,48,0.95);
+  }
+   .second-part{
+     padding: 19px 39px 19px 27px;
+     background: rgba(48,48,48,0.95);
+     position: relative;
+     top: -18px;
+     z-index: 9999;
+    }
+
+  h1{
+
+    background: transparent;
+    line-height: 52px;
+    &.yellow{
+      color: $regular-accent-color-2;
+    }
+  }
+}
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
+.slider-shadow{
+  height:16px;
+  margin: 0 auto;
+  width: 94%;
+  position: relative;
+  top:-16px;
+  z-index: -2;
+  -webkit-box-shadow: 0px 16px 32px 0px rgba(197,197,197,0.7);
+  -moz-box-shadow: 0px 16px 32px 0px rgba(197,197,197,0.7);
+  box-shadow: 0px 16px 32px 0px rgba(197,197,197,0.7);
+  &:before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    z-index: -1;
+    border: 16px solid transparent;
+    border-left: 50px solid $invert-accent-color-1;
+    border-top: 17px solid $invert-accent-color-1;
+
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    z-index: -1;
+    border: 16px solid transparent;
+    border-right: 50px solid $invert-accent-color-1;
+    border-top: 17px solid $invert-accent-color-1;
+
+  }
+}
+@include media-breakpoint-down(md){
+  .slick-slide img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+body{
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+ /* width:1200px;*/
+}
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+// variables
+$body-font-size: 13px;
+
+$h1-font-size: 54px;
+$h2-font-size: 34px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 16px;
+$h6-font-size: 14px;
+
+$span-font-size: 12px;
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/*
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+*/
+span {
+  font-size: $span-font-size;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #2a2d32;
+}
+
+h1{
+  font-size: $h1-font-size;
+}
+h2{
+  font-size: $h2-font-size;
+}
+h3{
+  font-size: $h3-font-size;
+
+}
+h4{
+  font-size: $h4-font-size;
+  line-height: 40px;
+}
+h5{
+  font-size: $h5-font-size;
+  letter-spacing: 0.2px;
+}
+h6{
+  font-size: $h6-font-size;
+}
+
+p{
+  font-size: $body-font-size;
+  color: #8a8a8a;
+  font-family: Arial, sans-serif;
+  line-height: 20px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.big-numbers{
+  font-size: 90px;
+  color: #e9e9ea;
+  letter-spacing: -4px;
+  @include media-breakpoint-down(md) {
+    font-size: 60px;
+  }
+}
+//color-scheme
+.invert{
+  color: #ffffff;
+}
+
+$regular-accent-color-1: #248cec;
+$regular-accent-color-2: #f4b60d;
+$regular-accent-color-3: #2a2d32;
+$invert-accent-color-1: #ffffff;
+
+a{
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  transition: .2s linear;
+  h1,h2,h3,h4,h5,h6,i{
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    transition: .2s linear;
+  }
+}
+button{
+  i{
+      -webkit-transition: .2s linear;
+      -moz-transition: .2s linear;
+      transition: .2s linear;
+  }
+}
