@@ -15,7 +15,7 @@
     },
     {
       "name": "products",
-      "url": "https://ke1sy.github.io/vue-learn/json/products.json"
+      "url": "http://localhost:8080/json/products.json"
     },
     {
       "name": "team",
