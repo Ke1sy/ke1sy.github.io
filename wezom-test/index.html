@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Wezom Front Test</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="users">
+                <form class="users__form js-search">
+                    <input type="text" name="filter" class="filter js-search-input">
+                    <button class="users__form-btn" type="submit">Поиск</button>
+                    <button class="users__form-btn" type="reset">Очистить</button>
+                </form>
+                <button class="users__btn js-load-users">Загрузить пользователей</button>
+                <div class="users__content js-users"></div>
+                <div class="js-statistics">
+                </div>
+            </div>
+        </div>
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+</html>
