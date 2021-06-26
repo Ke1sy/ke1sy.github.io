@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="talk.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="reveal/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <style>span.current-topic {
+        display: none;
+    }</style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h2 class="text-green">
+                WebSockets
+            </h2>
+            <p class="text-right" style="margin-top: 350px">Alina Andrieieva</p>
+        </section>
+
+        <section>
+            <section>
+                <h3>
+                    What is WebSocket?
+                </h3>
+                <div class="fragment" style="margin-top: 40px">
+                    <img src="images/sockets/websockets.png" alt="">
+                </div>
+
+
+            </section>
+
+            <section>
+                <div style="display: flex;align-items: center;">
+                    <img src="images/sockets/agenda.jpg" alt="" width="40%">
+                    <ul style="margin-left: 50px">
+                        <li>What is the WebSocket?</li>
+                        <br>
+                        <li>The HTTP / WebSocket protocol.</li>
+                        <br>
+                        <li>Websocket API (events, methods).</li>
+                        <br>
+                        <li>Create a chat app using WebSockets.</li>
+                    </ul>
+                </div>
+
+            </section>
+            <section>
+                <h3>
+                    What is WebSocket?
+                </h3>
+                <br>
+                <p class="fragment">
+                    It is a protocol, that provides a way to exchange data between browser and
+                    server via a persistent connection.
+                </p>
+                <br>
+
+                <p class="fragment">
+                    The prime intention of the WebSocket protocol: to provide persistent real-time communication between
+                    the client and the server over a single TCP socket connection.
+                </p>
+                <br>
+                <div class="fragment">
+                    <img src="images/sockets/question-2.png" alt="">
+                </div>
+            </section>
+            <section>
+                <h3> Simply put</h3>
+                <br>
+                <br>
+
+                <p>
+                    It is a permanent connection between the client and the server, using which the client and server
+                    can send data to each other at any time.
+                </p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>
+                    The HTTP protocol
+                </h3>
+                <br>
+                <br>
+                <div class="fragment">
+                    <img src="images/sockets/http.png" alt="">
+                </div>
+                <ul class="fragment http-list">
+                    <li><img src="images/sockets/unidirectional.png" alt=""></li>
+                    <li><img src="images/sockets/temp.png" alt=""></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>
+                    Workarounds
+                </h3>
+                <img src="images/sockets/workaround.png" alt="">
+
+
+            </section>
+            <section>
+                <h3>
+                    Life before WebSockets
+                </h3>
+                <br>
+                <br>
+                <img src="images/sockets/before-ws.png" alt="" width="600">
+
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>
+                    WebSocket protocol
+                </h3>
+                <br>
+
+                <ul>
+                    <li> opens up a handshake</li>
+                    <li> helps the data transfer.</li>
+                </ul>
+                <br>
+                <br>
+                <img src="images/sockets/ws-connection-0.png" alt="" width="50%">
+                <div>
+                    <pre>
+                         <code class="javascript">
+                        const ws = new WebSocket('ws://server.example.com');  // 80 port
+                        const wss = new WebSocket('wss://server.example.com'); // 443 port
+                    </code>
+                    </pre>
+                </div>
+
+            </section>
+
+            <section>
+                <h3>
+                    Connection from the client side
+                </h3>
+                <pre>
+                    <code class="javascript">
+                    const socket = new WebSocket('ws://server.example.com');
+                    </code>
+                </pre>
+                <img src="images/sockets/ws-connection-1.png" alt="" width="600">
+            </section>
+            <section>
+                <h3>
+                    Connection from the server side
+                </h3>
+                <br>
+                <br>
+                <img src="images/sockets/ws-connection-2.png" alt="">
+            </section>
+            <section>
+                <h3>
+                    WebSocket connection
+                </h3>
+                <br>
+                <br>
+                <img src="images/sockets/ws-connection.png" alt="">
+            </section>
+            <section>
+                <h3>
+                    Browser support
+                </h3>
+                <br>
+                <br>
+                <img src="images/sockets/browser-support.png" alt="" width="100%">
+            </section>
+
+            <section>
+                <h3>
+                    Pros
+                </h3>
+                <br>
+                <br>
+                <ul>
+                    <li>Full-featured duplex (double-sided) stream.</li>
+                    <br>
+                    <li>Bidirectional communication protocol.</li>
+                    <br>
+                    <li>Connection can be closed from either side.</li>
+                    <br>
+                    <li>WebSockets don’t have cross-origin limitations.</li>
+                    <br>
+                    <li>They are well-supported in browsers.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Where WebSockets can be used?</h3>
+                <br>
+                <br>
+                <ul>
+                    <li>Social networks, feeds, chats</li>
+                    <br>
+                    <li>Location-based services</li>
+                    <br>
+                    <li>Online games</li>
+                    <br>
+                    <li>Real-time updates (sports, marketplaces, finance)</li>
+                    <br>
+                    <li>Services based on real-time APIs</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h3>
+                API
+            </h3>
+            <pre><code class="javascript text-left" style="padding: 20px; max-height: 100%">
+const ws = new WebSocket('ws://echo.websocket.org');
+
+ws.binaryType;
+
+ws.readyState; // 0 – “CONNECTING”, 1 – “OPEN”,	2 – “CLOSING”, 3 – “CLOSED”
+
+
+// EVENT HANDLERS:
+
+ws.onopen = (e) => { ... };
+
+ws.onmessage = (e) => { ... };
+
+ws.onclose = (e) => { ... };
+
+ws.onerror = (e) => { ... };
+
+// METHODS:
+
+ws.send(/*data - String, Blob, ArrayBuffer*/);
+
+ws.close(/*code, reason*/)
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>
+                Let's try WebSockets!
+            </h3>
+            <img src="images/sockets/chat.png" alt="">
+
+        </section>
+    </div>
+
+
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                {
+                    src: 'reveal/reveal/lib/js/classList.js', condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: 'reveal/plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'reveal/plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                // { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                {
+                    src: 'reveal/plugin/notes/notes.js', async: true, condition: function () {
+                        return !!document.body.classList;
+                    }
+                }
+                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</div>
+</body>
+</html>
